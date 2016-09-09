@@ -1,0 +1,28 @@
+{
+  "name": "insult-me",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "webpack && node ./bin/www",
+    "build": "webpack",
+    "webpack": "webpack-dev-server --content-base public/bundle.min.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.5",
+    "webpack-dev-server": "^1.15.0"
+  },
+  "autho": "Todor Nikolov",
+  "license": "ISC"
+}

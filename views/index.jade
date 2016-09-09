@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  section.container
+    header.top
+      span.hamburger
+      h1.name #{title}
+      span.cog
+    
+    section#message-pane.message-container
+      article.incoming
+        img(src='/images/bot3.jpg')
+        | Welcome write something.
+
+    section.bottom
+      div.input-wrapper
+        input#message-input(type='text',placeholder='Type something...', value='')
+        button#message-input-button.button
+  

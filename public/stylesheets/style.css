@@ -1,0 +1,107 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	color: #686868;
+	background: #666;
+}
+
+.container {
+	width: 640px;
+	margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top, .bottom {
+	background-color: #7438a7;
+}
+
+.top {
+	height: 120px;
+	position: relative;
+}
+
+.top .hamburger {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    height: 20px;
+    width: 23px;
+}
+
+.top .cog {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    height: 20px;
+    width: 23px;
+}
+
+.top .name {
+    width: 100%;
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 25px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.message-container {
+	height: auto;
+	background-color: #EFEFEF;
+	padding: 30px 40px;
+    overflow: hidden;
+}
+
+.bottom {
+	height: 75px;
+}
+
+.bottom .input-wrapper {
+    height: 50px;
+    position: relative;
+    padding-top: 13px;
+    margin: 0 30px;
+}
+
+.bottom .input-wrapper input:focus {
+	outline: none;
+}
+
+.bottom .input-wrapper input {
+    height: 50px;
+    border: none;
+    padding: 0 50px 0 25px;
+    width: 87%;
+	font-size: 15px;
+    border-radius: 25px;    
+}
+
+.bottom .input-wrapper :-webkit-input-placeholder, .bottom .input-wrapper :-moz-placeholder, .bottom .input-wrapper :-ms-input-placeholder {
+    font-weight: normal;
+}
+
+.bottom .input-wrapper .button {
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    right: 4px;
+    top: 17px;
+	background: #FFC600 url("../images/chevron.png") no-repeat center center;
+	cursor: pointer;
+    border: none;
+    border-radius: 21px;
+}
+
+a.hamburger {
+	background: url("../images/hamburger.png") no-repeat;
+}
+
+a.cog {
+	background: url("../images/cog.png") no-repeat;
+}
