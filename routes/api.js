@@ -4,7 +4,7 @@ const Insult = mongoose.model('Insult');
 var router = express.Router();
 
 
-//API - for stored insults.
+//API - for stored insults. 
 router.route('/post')
   .get(function(req, res) {
       Insult.find(function(err, insult) {
