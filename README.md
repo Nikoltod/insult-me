@@ -3,7 +3,9 @@ Simple and small web app that stores new insults and returns them on random prin
 
 ## Run :
 
-To run the app simply write : ```bash npm run start 
+To run the app simply write : 
+```bash
+npm run start 
 ```
 
 ## Note : 
