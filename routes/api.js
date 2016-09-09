@@ -4,7 +4,7 @@ const Insult = mongoose.model('Insult');
 var router = express.Router();
 
 
-// TODO : MUST have a way to shuffle and get a random insult from the DB.
+//API - for stored insults.
 router.route('/post')
   .get(function(req, res) {
       Insult.find(function(err, insult) {

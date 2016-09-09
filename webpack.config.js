@@ -16,7 +16,8 @@
      }
  }
 
-////For webpack-dev-server
+////***For webpack-dev-server ***
+
 // var path = require("path");
 // module.exports = {
 //   entry: {

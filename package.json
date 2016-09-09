@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "webpack && node ./bin/www",
-    "build": "webpack",
-    "webpack": "webpack-dev-server --content-base public/bundle.min.js"
+    "start": "node ./bin/www",
+    "build": "webpack"
   },
   "dependencies": {
     "body-parser": "~1.15.1",

@@ -15,13 +15,12 @@ import makeRequest from "./requestFactory";
 
         postingInsult();
 
-        //GENERATING A message
         setTimeout(function () {
             gettingInsult();
         }, responseTime());
 
     });
-    //getting message
+    
     const gettingInsult = function () {
         makeRequest({
             method: 'get',
@@ -46,7 +45,6 @@ import makeRequest from "./requestFactory";
     function getRandomIndex(lengthOfResponse) {
         return Math.floor(Math.random(0, lengthOfResponse) * 100);
     }
-    //posting message
     const postingInsult = function () {
         const message = document.getElementById("message-input").value;
         makeRequest({
@@ -87,29 +85,23 @@ import makeRequest from "./requestFactory";
     }
 
     function generateMessage(messageStatus, recievedMessage) {
-        //visualize message to user
         let input = document.getElementById("message-input"),
             message = recievedMessage ? recievedMessage : input.value,
             time = getTime(),
-            //creating a article with a picture and style.
             article = generateArticle(message, time, messageStatus),
             chat = document.getElementById("message-pane");
         chat.appendChild(article);
         fadeIn(article);
-        //reset input value.
+        
         input.value = '';
     }
 
     function generateArticle(message, currentTime, messageStatus) {
         const article = document.createElement("article"),
-
-
             clock = document.createElement("span"),
             avatar = document.createElement("img");
 
         article.innerText = message ? message : "Lorem ipsum";
-
-
 
         if (messageStatus === "incoming") {
             article.className = "incoming";
@@ -125,7 +117,6 @@ import makeRequest from "./requestFactory";
 
         article.appendChild(avatar);
         article.appendChild(clock);
-
 
         return article;
     }

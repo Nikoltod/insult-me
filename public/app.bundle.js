@@ -67,12 +67,11 @@
 
 	        postingInsult();
 
-	        //GENERATING A message
 	        setTimeout(function () {
 	            gettingInsult();
 	        }, responseTime());
 	    });
-	    //getting message
+
 	    var gettingInsult = function gettingInsult() {
 	        (0, _requestFactory2.default)({
 	            method: 'get',
@@ -97,7 +96,6 @@
 	    function getRandomIndex(lengthOfResponse) {
 	        return Math.floor(Math.random(0, lengthOfResponse) * 100);
 	    }
-	    //posting message
 	    var postingInsult = function postingInsult() {
 	        var message = document.getElementById("message-input").value;
 	        (0, _requestFactory2.default)({
@@ -138,17 +136,14 @@
 	    }
 
 	    function generateMessage(messageStatus, recievedMessage) {
-	        //visualize message to user
 	        var input = document.getElementById("message-input"),
 	            message = recievedMessage ? recievedMessage : input.value,
 	            time = getTime(),
-
-	        //creating a article with a picture and style.
-	        article = generateArticle(message, time, messageStatus),
+	            article = generateArticle(message, time, messageStatus),
 	            chat = document.getElementById("message-pane");
 	        chat.appendChild(article);
 	        fadeIn(article);
-	        //reset input value.
+
 	        input.value = '';
 	    }
 
