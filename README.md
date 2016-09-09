@@ -1,11 +1,14 @@
 # insult-me
 Simple and small web app that stores new insults and returns them on random principle.
 
-## Run :
+## Usage:
 
-To run the app simply write : 
 ```bash
-npm run start 
+# install modules
+npm install
+
+# run the app
+npm run start
 ```
 
 ## Note : 
